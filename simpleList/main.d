@@ -1,2 +1,2 @@
-obj/main.o: \
-  /Users/monish/personal-workspace/udacity-cpp-nanodegree/sandbox//main.cpp
+/Users/monish/personal-workspace/udacity-cpp-nanodegree/simpleList//main.o: \
+  /Users/monish/personal-workspace/udacity-cpp-nanodegree/simpleList//main.cpp

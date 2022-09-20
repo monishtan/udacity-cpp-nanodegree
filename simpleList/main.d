@@ -1,2 +1,1 @@
-/Users/monish/personal-workspace/udacity-cpp-nanodegree/simpleList//main.o: \
-  /Users/monish/personal-workspace/udacity-cpp-nanodegree/simpleList//main.cpp
+obj/main.o: src/main.cpp src/include/list.h

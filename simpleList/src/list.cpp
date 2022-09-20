@@ -30,57 +30,62 @@ void List::print_menu(){
 }
 
 void List::print_list(){
-    cout<< "\n\n\n\n";
-    cout<< "**** Printing List ****\n";
+    cout << "\n\n\n\n";
+    cout << "**** Printing List ****\n";
 
     for(int i=0; i<list.size(); i++){
-        cout<< list[i] << "\n";
+        cout << list[i] << "\n";
     }
 
-    cout<< "\nM - Menu \n";
+    cout << "\nM - Menu \n";
     char choice;
-    cin>> choice;
+    cin >> choice;
 
     if(choice == 'M' || choice == 'm'){
         print_menu();
     }
     else{
-        cout<< "Invalid choice. Quitting...\n\n";
+        cout << "Invalid choice. Quitting...\n\n";
     }
 }
 
 
 void List::add_item(){
-    cout<< "\n\n\n\n";
-    cout<< "**** Add Item ****\n";
-    cout<< "Type an item and press enter: ";
+    cout << "\n\n\n\n";
+    cout << "**** Add Item ****\n";
+    cout << "Type an item and press enter: ";
 
     string item;
     cin >> item;
 
     list.push_back(item);
 
-    cout<<"Successfully added item to the list \n\n\n";
+    cout << "Successfully added item to the list \n\n\n";
     cin.clear();
 
     print_menu();
 }
 
 void List::delete_item(){
-    cout<< "**** Delete Item ****\n";
-    cout<< "Select an item index number to delete: \n";
+    cout << "**** Delete Item ****\n";
+    cout << "Select an item index number to delete\n";
 
     if(list.size()){
         for(int i=0; i<list.size(); i++){
-            cout<< i << ": " << list[i] << endl;
+            cout << i << ": " << list[i] << endl;
         }
-    } 
+
+        int choiceNum;   
+        cin >> choiceNum;
+
+        list.erase(list.begin() + choiceNum);
+        cout << "Successfully deleted item.\n\n\n";
+    }
     else{
-        cout<< "No items to delete.\n";
+        cout << "No items to delete.\n";
     }
 
-    int index;   
-    cin>> index;
+    
 
     print_menu();
 }

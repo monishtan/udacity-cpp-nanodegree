@@ -8,10 +8,10 @@ CXXFLAGS = -std=c++11 -Wall
 LDFLAGS = 
 
 # Makefile settings - Can be customized.
-APPNAME = hello
+APPNAME = simpleList
 EXT = .cpp
-SRCDIR = /Users/monish/personal-workspace/udacity-cpp-nanodegree/sandbox/
-OBJDIR = /Users/monish/personal-workspace/udacity-cpp-nanodegree/sandbox/
+SRCDIR = src
+OBJDIR = obj
 
 ############## Do not change anything from here downwards! #############
 SRC = $(wildcard $(SRCDIR)/*$(EXT))

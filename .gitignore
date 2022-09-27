@@ -1,1 +1,4 @@
 .vscode/
+simpleList/simpleList
+*.o
+*.d
